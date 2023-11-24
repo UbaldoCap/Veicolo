@@ -17,11 +17,8 @@ public class Veicolo {
         if (valore == 0) {
             System.out.println("velocità costante " + velocita);
         } else {
-            int velocitafinale = (velocita + valore);
-            for (int i = velocita; i < velocitafinale; i++) {
-                velocita++;
-                System.out.println("accellerare " + velocita);
-            }
+            this.velocita += valore;
+            System.out.println("velocità incrementata " + velocita);
         }
     }
 

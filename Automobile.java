@@ -1,4 +1,4 @@
-public class Automobile extends Veicolo {
+public class Automobile extends Veicolo implements SuonoRombo {
 
     public Automobile(int velocita) {
         super(velocita);
@@ -17,5 +17,15 @@ public class Automobile extends Veicolo {
     @Override
     public void fermarsi() {
         super.fermarsi();
+    }
+
+    @Override
+    public void suonaClacson() {
+        System.out.println(ListaSuoni.MACCHINA.getSuono());
+    }
+
+    @Override
+    public void accendiRadio() {
+        System.out.println("Radio accesa per la macchina");
     }
 }
